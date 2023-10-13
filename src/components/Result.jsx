@@ -1,19 +1,35 @@
-function Result() {
+const styles = {
+    container: {
+        textAlign: 'justify',
+        display: 'inline',
+        marginLeft: 36
+    }, 
+};
+
+function Result(props) {
+
+    const {user, repos} = props;
+    if (!user) {
+        return null;
+    }
+
+    const {avatar_url, bio, name, location} = user;
 
     return (
         <div>
-            <img>Avatar</img>
-            <h1>Username</h1>
+            <h1>Svi korisnici: </h1>
+            <img></img>
             <p>Bio</p>
             <p>Location</p>
-            <List>
-                <ul>
-                    <li>repo name</li>
-                </ul>
-            </List>
-
-        </div>
-        
+            
+            {/* <ul>
+                {githubUsers.map((user) => {
+                    return <li key={user.id}>
+              
+              </li>
+            })}
+            </ul> */}
+            </div>
     )
     
 }
