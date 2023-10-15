@@ -13,17 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -37,12 +26,40 @@
   }
 }
 
-footer {
-  position: fixed;
-  background-color: gray;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 8px;
-  text-align: center;
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.bio {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.location {
+    font-size: 18px;
+}
+
+.repositories {
+    margin-top: 20px;
+}
+
+.repoList {
+    list-style: none;
+    padding-left: 0;
+}
+
+.repoItem {
+    font-size: 16px;
+    margin-bottom: 5px;
 }

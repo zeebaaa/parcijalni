@@ -14,10 +14,9 @@ function InputForm(props) {
     }
 
     return(
-            <form>
                 <Form>
                     <Form.Label>GitHub username:</Form.Label>
-                    <FormControl 
+                    <FormControl
                         size="lg" 
                         placeholder="e.g.facebook"
                         value={username} 
@@ -31,8 +30,6 @@ function InputForm(props) {
                         size="lg" 
                         className="mt-5">GO!</Button>
                 </Form>
-          
-            </form>
     )
 }
 
